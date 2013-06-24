@@ -1,0 +1,5 @@
+# JSON Schema DOM
+
+http://json-schema.org/latest/json-schema-core.html
+
+Prototype
