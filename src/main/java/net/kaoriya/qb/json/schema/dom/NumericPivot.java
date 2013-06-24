@@ -4,5 +4,5 @@ public interface NumericPivot
 {
     Number getValue();
 
-    boolean getExclusive();
+    boolean isExclusive();
 }

@@ -2,6 +2,7 @@ package net.kaoriya.qb.json.schema.dom;
 
 import java.util.regex.Pattern;
 
+// 5.2
 public interface StringValidation extends InstanceValidation
 {
     // 5.2.1
