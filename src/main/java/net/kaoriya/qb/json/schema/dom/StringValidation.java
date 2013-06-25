@@ -13,4 +13,7 @@ public interface StringValidation extends InstanceValidation
 
     // 5.2.3
     Pattern getPattern();
+
+    // 7. "format"
+    String getFormat();
 }
