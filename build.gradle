@@ -4,3 +4,11 @@ apply plugin: 'java'
 
 archivesBaseName = 'json-schema-dom'
 version = '0.1'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.json', name: 'json', version: '20090211'
+}

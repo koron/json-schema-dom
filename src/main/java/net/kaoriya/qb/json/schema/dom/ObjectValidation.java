@@ -1,8 +1,12 @@
 package net.kaoriya.qb.json.schema.dom;
 
-import java.util.Set;
+import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
+import org.json.JSONObject;
+
+// validator of object (primitive type)
 // 5.4 "Validation keywords for objects"
 public interface ObjectValidation extends InstanceValidation
 {
@@ -26,4 +30,7 @@ public interface ObjectValidation extends InstanceValidation
 
     // 5.4.5 "dependencies"
     Map<String, Dependency> getDependencies();
+
+    // 5.5.1 "enum"
+    List<JSONObject> getEnum();
 }

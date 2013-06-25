@@ -2,6 +2,9 @@ package net.kaoriya.qb.json.schema.dom;
 
 import java.util.List;
 
+import org.json.JSONArray;
+
+// validator of array (primitive type)
 // 5.3
 public interface ArrayValidation
 {
@@ -19,4 +22,7 @@ public interface ArrayValidation
 
     // 5.3.4
     boolean isUniqueItems();
+
+    // 5.5.1 "enum"
+    List<JSONArray> getEnum();
 }
