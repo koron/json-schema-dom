@@ -1,17 +1,30 @@
 package net.kaoriya.qb.json.schema.dom;
 
-import java.net.URI;
+import java.util.List;
 
 public interface Schema
 {
-    String getID();
+    // 5.5.2 "type"
+    //
+    // Valid values:
+    //  - NullValidation
+    //  - BooleanValidation
+    //  - IntegerValidation
+    //  - NumberValidation
+    //  - StringValidation
+    //  - ArrayValidation
+    //  - ObjectValidation
+    List<InstanceValidation> getType();
 
-    URI getSchemaURI();
+    // 5.5.3 "allOf"
+    List<Schema> getAllOf();
 
-    String getTitle();
+    // 5.5.4 "anyOf"
+    List<Schema> getAnyOf();
 
-    String getDescription();
+    // 5.5.5 "oneOf"
+    List<Schema> getOneOf();
 
-    // FIXME:
-    Object getDefault();
+    // 5.5.6 "not"
+    Schema getNot();
 }
