@@ -1,4 +1,4 @@
-package net.kaoriya.qb.json.schema.dom;
+package net.kaoriya.qb.json_schema_dom.draft_v4;
 
 // 5.1
 public interface NumericValidation extends InstanceValidation

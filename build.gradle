@@ -3,7 +3,7 @@
 apply plugin: 'java'
 
 archivesBaseName = 'json-schema-dom'
-version = '0.1'
+version = '0.2'
 
 repositories {
     mavenCentral()

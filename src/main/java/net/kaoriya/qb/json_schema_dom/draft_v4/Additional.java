@@ -1,4 +1,4 @@
-package net.kaoriya.qb.json.schema.dom;
+package net.kaoriya.qb.json_schema_dom.draft_v4;
 
 // 5.3.1 and 5.4.4
 public interface Additional {
