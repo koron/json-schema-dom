@@ -9,8 +9,8 @@ public interface Additional {
     public interface True extends Additional {
     }
 
-    public interface Schema extends Additional {
-        Schema getSchema();
+    public interface JSONSchema extends Additional {
+        JSONSchema getSchema();
     }
 
 }

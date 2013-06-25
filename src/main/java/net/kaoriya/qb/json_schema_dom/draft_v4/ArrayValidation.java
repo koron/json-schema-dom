@@ -12,7 +12,7 @@ public interface ArrayValidation
     Additional getAdditionalItems();
 
     // 5.3.1 "items"
-    List<Schema> getItems();
+    List<JSONSchema> getItems();
 
     // 5.3.2
     Integer getMaxItems();

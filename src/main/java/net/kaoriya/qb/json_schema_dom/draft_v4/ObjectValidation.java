@@ -23,10 +23,10 @@ public interface ObjectValidation extends InstanceValidation
     Additional getAdditionalProperties();
 
     // 5.4.4 "properties"
-    Map<String, Schema> getProperties();
+    Map<String, JSONSchema> getProperties();
 
     // 5.4.4 "patternProperties"
-    Map<String, Schema> getPatternProperties();
+    Map<String, JSONSchema> getPatternProperties();
 
     // 5.4.5 "dependencies"
     Map<String, Dependency> getDependencies();

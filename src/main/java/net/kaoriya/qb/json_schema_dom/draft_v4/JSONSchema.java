@@ -2,7 +2,7 @@ package net.kaoriya.qb.json_schema_dom.draft_v4;
 
 import java.util.List;
 
-public interface Schema
+public interface JSONSchema
 {
     // 5.5.2 "type"
     //
@@ -17,14 +17,14 @@ public interface Schema
     List<InstanceValidation> getType();
 
     // 5.5.3 "allOf"
-    List<Schema> getAllOf();
+    List<JSONSchema> getAllOf();
 
     // 5.5.4 "anyOf"
-    List<Schema> getAnyOf();
+    List<JSONSchema> getAnyOf();
 
     // 5.5.5 "oneOf"
-    List<Schema> getOneOf();
+    List<JSONSchema> getOneOf();
 
     // 5.5.6 "not"
-    Schema getNot();
+    JSONSchema getNot();
 }
