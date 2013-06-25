@@ -4,7 +4,7 @@ import java.util.Set;
 import java.util.Map;
 
 // 5.4 "Validation keywords for objects"
-public interface ObjectValidation
+public interface ObjectValidation extends InstanceValidation
 {
     // 5.4.1 "maxProperties"
     Integer getMaxProperties();
@@ -15,7 +15,14 @@ public interface ObjectValidation
     // 5.4.3 "required"
     Set<String> getRequired();
 
-    // FIXME: 5.4.4 "additionalProperties, properties and patternProperties"
+    // 5.4.4 "additionalProperties"
+    Additional getAdditionalProperties();
+
+    // 5.4.4 "properties"
+    Map<String, Schema> getProperties();
+
+    // 5.4.4 "patternProperties"
+    Map<String, Schema> getPatternProperties();
 
     // 5.4.5 "dependencies"
     Map<String, Dependency> getDependencies();
